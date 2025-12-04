@@ -90,15 +90,13 @@ const Intro = () => {
 			<motion.div variants={itemVariants} className="flex items-center justify-center mb-4">
 				<div className="relative">
 					<Image
-						src={
-							"https://images.unsplash.com/photo-1596727147705-61a532a659bd?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-						}
+						src={"/me.jpg"}
 						width={192}
 						height={192}
-						quality={95}
+						quality={90}
 						priority={true}
 						alt="My Image"
-						className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+						className="h-44 w-44 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
 					/>
 					<motion.span
 						className="text-4xl absolute bottom-0 right-0"
@@ -149,7 +147,7 @@ const Intro = () => {
 				</ActionButton>
 
 				<ActionButton
-					href="/CV.pdf"
+					href="/CV_Stefano_Valenti_IT_2025.pdf"
 					download
 					className="bg-white text-gray-800 hover:bg-gray-50 borderBlack dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/20"
 				>

@@ -8,6 +8,12 @@ import { Splash } from "next/font/google";
 import Link from "next/link";
 import { useState } from "react";
 
+import { Mr_De_Haviland } from "next/font/google";
+
+export const haviland = Mr_De_Haviland({
+	weight: "400",
+	subsets: ["latin"],
+});
 // Fonts
 const splash = Splash({
 	subsets: ["latin"],
@@ -37,18 +43,16 @@ const MobileNav = () => {
 			></motion.div>
 
 			<motion.nav
-				className="sm:hidden fixed  top-[0.15rem] h-12 flex  justify-between w-full px-4 items-center"
+				className="sm:hidden fixed  top-[0.15rem] h-14 flex  justify-between w-full px-4 items-center"
 				initial={{ y: -100 }}
 				animate={{ y: 0 }}
 				transition={{ type: "spring", stiffness: 50, damping: 14 }}
 			>
-				<h1 className="capitalize text-2xl relative">
-					<a href="/#" className={`block ${splash.className} dark:text-purple-200 text-purple-950 `}>
-						Stefano Valenti
-					</a>
+				<h1 className="capitalize text-2xl self-center align-middle ml-2 pb-2 relative">
+					<a className={`${haviland.className} text-white align-middle text-2xl`}>Stefano Valenti</a>
 				</h1>
 
-				<button className={`text-2xl mb-3 px-3  flex `} onClick={handleMobileMenuToggle}>
+				<button className={`text-xl mb-1 px-3  flex `} onClick={handleMobileMenuToggle}>
 					<Hamburger rounded toggled={isMobileMenuOpen} toggle={setMobileMenuOpen} />
 				</button>
 			</motion.nav>
