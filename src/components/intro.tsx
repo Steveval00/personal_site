@@ -66,7 +66,7 @@ const Intro = () => {
 	const { ref } = useSectionInView("Home", 0.5);
 	const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
-	const roles = ["React Native Engineer", "Full-Stack Developer", "Mobile Architect"];
+	const roles = ["Frontend Developer", "Web Designer", "Marketing Enthusiast"];
 
 	return (
 		<motion.section
@@ -88,20 +88,26 @@ const Intro = () => {
 			</motion.div>
 
 			<motion.div variants={itemVariants} className="flex items-center justify-center mb-4">
-				<div className="relative">
+				<div className="relative inline-block">
+					{/* Avatar */}
 					<Image
-						src={"/me.jpg"}
+						src="/me.jpg"
 						width={192}
 						height={192}
 						quality={90}
-						priority={true}
+						priority
 						alt="My Image"
 						className="h-44 w-44 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
 					/>
+
+					{/*<div className="absolute bottom-1 right-1 h-14 w-14 bg-[#363853] rounded-full z-10 pointer-events-none"></div> 
+					Patch che copre il bordo sotto l'emoji (invisibile ma fondamentale) */}
+
+					{/* Emoji sopra il patch */}
 					<motion.span
-						className="text-4xl absolute bottom-0 right-0"
+						className="text-4xl absolute bottom-3 right-3 z-20"
 						initial={{ opacity: 0, scale: 0 }}
-						animate={{ opacity: 1, scale: 1 }}
+						animate={{ opacity: 1, scale: 1.2 }}
 						transition={{
 							type: "spring",
 							stiffness: 125,
@@ -130,7 +136,7 @@ const Intro = () => {
 			</motion.div>
 
 			<motion.p className="max-w-2xl mx-auto mb-10 text-lg text-gray-700 dark:text-slate-300" variants={itemVariants}>
-				Building innovative solutions with React Native, Flutter & Next.js.
+				Just trying to make the web prettier than my morning hair.
 			</motion.p>
 
 			{/* --- REFINED ACTION GROUP --- */}
@@ -155,8 +161,12 @@ const Intro = () => {
 				</ActionButton>
 
 				<div className="flex gap-4">
-					<SocialLink href="https://www.linkedin.com/in/kapilbadokar/" icon={BsLinkedin} tooltip="LinkedIn" />
-					<SocialLink href="https://github.com/Kapil619" icon={FaGithubSquare} tooltip="GitHub" />
+					<SocialLink
+						href="https://www.linkedin.com/in/stefano-valenti-440ab2233/"
+						icon={BsLinkedin}
+						tooltip="LinkedIn"
+					/>
+					<SocialLink href="https://github.com/Steveval00" icon={FaGithubSquare} tooltip="GitHub" />
 				</div>
 			</motion.div>
 		</motion.section>

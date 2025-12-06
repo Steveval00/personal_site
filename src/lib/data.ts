@@ -7,7 +7,8 @@ import TrackerImg from "/public/issue-tracker.png";
 import PestRobot from "/public/pestrobot.png";
 import SeleniumBot from "/public/seleniumbot.png";
 import SmartPlug from "/public/smartplug.jpg";
-import PaperAsh from "/public/paperash.png";
+import AcquaPura from "/public/acquapura2.png";
+import EcoMeal from "/public/mascotte_ecomeal.svg";
 
 export const links = [
 	{
@@ -189,7 +190,7 @@ export const experienceData = [
 			" Streamlined development processes by configuring Play Console and optimizing the EAS build pipeline.",
 			"Resolved critical bugs, including video playback issues, improving app performance and user satisfaction",
 		],
-		imageUrl: "https://nacue.com/images/tlpteam/l_team_278.jpg",
+		imageUrl: "",
 		skills: ["logos:python", "logos:dart", "logos:firebase", "logos:aws", "logos:selenium"],
 		dateStarted: "June 2024",
 		dateEnded: "Aug 2024",
@@ -216,54 +217,57 @@ export const experienceData = [
 
 export const featuredWorkData = [
 	{
-		title: "PaperAsh",
-		tagline: "Private AI Journaling Companion",
-		logoUrl: PaperAsh,
+		title: "AcquaPura Website",
+		tagline: "Website & Branding for a Water Purification Company",
+		logoUrl: AcquaPura,
+
 		description:
-			"A secure, cross-platform journaling app that uses AI to help users reflect and grow. Features local-first data sync, rich text editing, and in-app subscriptions.",
+			"A complete rebranding and website redesign for AcquaPura, a company specializing in water purification systems. I crafted the visual identity from the ground up and developed a modern, high-converting website using Webflow. The project focuses on clean design, strong product communication, and a trustworthy visual experience.",
+
 		features: [
-			"AI-powered chat & content beautification.",
-			"Symbolic 'Burn' feature for emotional release.",
-			"Premium subscriptions with RevenueCat.",
-			"Offline support with local SQLite database.",
+			"Full brand identity design (logo, color palette, typography).",
+			"Modern, responsive website built entirely in Webflow.",
+			"Product-focused layout with clear value communication.",
+			"SEO-friendly structure and optimized assets.",
+			"Custom animations and interactions for smoother UX.",
 		],
+
 		tech: [
-			{ name: "React Native", icon: "logos:react" },
-			{ name: "Supabase", icon: "logos:supabase-icon" },
-			{ name: "RevenueCat", icon: "simple-icons:revenuecat" },
-			{ name: "Expo", icon: "logos:expo-icon" },
-			{ name: "SQLite", icon: "simple-icons:sqlite" },
-			{ name: "PostHog", icon: "simple-icons:posthog" },
+			{ name: "Webflow", icon: "simple-icons:webflow" },
+			{ name: "Figma", icon: "logos:figma" },
+			{ name: "HTML5", icon: "vscode-icons:file-type-html" },
+			{ name: "CSS3", icon: "vscode-icons:file-type-css" },
+			{ name: "Adobe Illustrator", icon: "logos:adobe-illustrator" },
+			{ name: "Adobe Photoshop", icon: "logos:adobe-photoshop" },
 		],
-		appStoreUrl: "https://apps.apple.com/us/app/paperash/6748613722",
-		playStoreUrl: "",
+
+		websiteUrl: "",
 	},
 	{
-		title: "SaffronAI",
-		tagline: "AI-Powered Investment Analyzer",
-		logoUrl: "https://www.saffronai.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo.c61962eb.png&w=96&q=75",
+		title: "EcoMeal",
+		tagline: "AI-Powered Sustainability Analyzer",
+		logoUrl: EcoMeal,
 		description:
-			"A cross-platform app providing users with their portfolio analytics,financial scores and personalized wealth management tools.",
+			"EcoMeal is a web-mobile app that analyzes meal photos with AI to estimate their environmental impact. I developed it together with Efebia for my thesis, focusing on the entire frontend experience, the integration with backend services, the refinement of the AI analysis flow, and the design of early gamification features, including missions and crypto-token rewards.",
 		features: [
-			"Investment tracking through custom-built charts and metrics.",
-			"Real-time updates and reminders via AWS SNS + FCM/APNs integration.",
-			"User login flows with Firebase OTP and custom API-based verification.",
-			"Deep linking and push notifications.",
+			"AI-powered analysis of meal images.",
+			"Interactive, mobile-first user experience.",
+			"Gamification: missions, rewards and tokens.",
+			"Eco-recipes and personal sustainability insights.",
 		],
 		tech: [
-			{ name: "React Native", icon: "logos:react" },
+			{ name: "SvelteKit", icon: "logos:svelte-icon" },
 			{ name: "TypeScript", icon: "logos:typescript-icon" },
-			{ name: "Expo", icon: "logos:expo-icon" },
-			{ name: "AWS CloudWatch", icon: "logos:aws-cloudwatch" },
-			{ name: "AWS ", icon: "logos:aws" },
+			{ name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
+			{ name: "Figma", icon: "logos:figma" },
+			{ name: "Node.js", icon: "logos:nodejs-icon" },
+			{ name: "MongoDB", icon: "logos:mongodb-icon" },
 		],
-		appStoreUrl: "https://apps.apple.com/us/app/saffronai/id6741477526",
-		playStoreUrl: "https://play.google.com/store/apps/details?id=com.saffronai.saffronai",
 	},
 	{
-		title: "InfoTik",
+		title: "GraphMed",
 		tagline: "Social Media Application",
-		logoUrl: "https://nacue.com/images/tlpteam/l_team_278.jpg",
+		logoUrl: "",
 		description:
 			"A mobile app for a UK based startup, InfoTik, that allows users to share videos and photos, comment on posts, and interact with community.",
 		features: [
