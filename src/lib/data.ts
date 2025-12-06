@@ -242,7 +242,7 @@ export const featuredWorkData = [
 		],
 
 		appStoreUrl: null,
-		playStoreUrl: "https://play.google.com/store/search?q=infotik&c=apps&hl=en_IN",
+		playStoreUrl: null,
 	},
 	{
 		title: "EcoMeal",
@@ -265,7 +265,7 @@ export const featuredWorkData = [
 			{ name: "MongoDB", icon: "logos:mongodb-icon" },
 		],
 		appStoreUrl: null,
-		playStoreUrl: "https://play.google.com/store/search?q=infotik&c=apps&hl=en_IN",
+		playStoreUrl: null,
 	},
 	{
 		title: "GraphMed",
@@ -287,6 +287,6 @@ export const featuredWorkData = [
 			{ name: "Redux", icon: "logos:redux" },
 		],
 		appStoreUrl: null,
-		playStoreUrl: "https://play.google.com/store/search?q=infotik&c=apps&hl=en_IN",
+		playStoreUrl: null,
 	},
 ] as const;
