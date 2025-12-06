@@ -20,14 +20,12 @@ const nextConfig = {
 			},
 		],
 	},
+
 	experimental: {
 		serverActions: true,
 	},
 };
 
-module.exports = nextConfig;
-// next.config.js
-module.exports = {
-	eslint: { ignoreDuringBuilds: true }, // skip ESLint errors during build
-	typescript: { ignoreBuildErrors: true }, // skip type-check errors during build
-};
+//module.exports = nextConfig;
+
+export default nextConfig;

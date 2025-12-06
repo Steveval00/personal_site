@@ -241,7 +241,8 @@ export const featuredWorkData = [
 			{ name: "Adobe Photoshop", icon: "logos:adobe-photoshop" },
 		],
 
-		websiteUrl: "",
+		appStoreUrl: null,
+		playStoreUrl: "https://play.google.com/store/search?q=infotik&c=apps&hl=en_IN",
 	},
 	{
 		title: "EcoMeal",
@@ -263,6 +264,8 @@ export const featuredWorkData = [
 			{ name: "Node.js", icon: "logos:nodejs-icon" },
 			{ name: "MongoDB", icon: "logos:mongodb-icon" },
 		],
+		appStoreUrl: null,
+		playStoreUrl: "https://play.google.com/store/search?q=infotik&c=apps&hl=en_IN",
 	},
 	{
 		title: "GraphMed",
