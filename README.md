@@ -1,63 +1,34 @@
-# Devportfolio
+# 💼 Stefano Valenti — Developer Portfolio
 
-This is my developer portfolio website.
+This is my personal developer portfolio, built to showcase my projects, skills, and experience as a front-end developer focused on creating clean, fast, and intuitive digital experiences.
 
-## Tech Stack
+The website includes sections for my featured work, technical stack, background, and a dynamic contact form powered by server-side email sending.
 
-**Client:** NextJs, React, Typescript, TailwindCSS, Framer-Motion, Iconify
+---
 
-**Server:** Vercel-NextJs.
+## 🛠️ Tech Stack
 
-## Features
+**Frontend:** Next.js, React, TypeScript, TailwindCSS, Framer Motion, Iconify  
+**Backend:** Next.js Server Actions (deployed on Vercel / Netlify)  
+**Email Service:** Resend API
 
-- Light/dark mode toggle
-- Fully Mobile Responsive
-- Dynamic framer-motion Animations
-- Sending Emails through form
+---
 
-## Run Locally
+## ✨ Features
 
-Clone the project
+- 🌗 Light/dark mode
+- 📱 Fully responsive design
+- 🎞️ Framer Motion animations
+- 📨 Server action contact form with Resend
+- ⚡ Fast, accessible and SEO-friendly
+- 🔧 Easy to extend with new projects or sections
 
-```bash
-  git clone https://github.com/Kapil619/devportfolio.git
-```
+---
 
-Go to the project directory
+## 🚀 Run Locally
 
-```bash
-  cd devportfolio
-```
-
-Install dependencies
+Clone the repository:
 
 ```bash
-  npm install
+git clone https://github.com/Steveval00/personal_site.git
 ```
-
-Start the server
-
-```bash
-  npm run dev
-```
-
-## Screenshots
-
-<img src="https://github.com/Kapil619/devportfolio/assets/84692375/2cd35202-da6f-4cc6-9dc8-90b91b50561a" with='350' height='350'>
-
-## Usage
-
-Try out the project:
-
-- Change contents of lib/data.ts file to your own data.
-
-## 🔗 Links
-
-[![](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/kapil-badokar)
-[![](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kapilbadokar321@gmail.com)
-[![](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/kapil_badokar)
-[![](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/630089077261336602)
-
-## Support
-
-For support, Email: stefano.valenti2000@gmail.com
