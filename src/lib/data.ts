@@ -148,7 +148,7 @@ export const skillsData = [
 	{ name: "SvelteKit", src: "logos:svelte-icon" },
 	{ name: "Figma", src: "logos:figma" },
 	{ name: "Webflow", src: "logos:webflow" },
-	{ name: "Canva", src: canva },
+	{ name: "Canva", src: "logos:canva" },
 ] as const;
 
 export const experienceData = [
