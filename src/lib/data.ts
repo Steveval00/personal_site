@@ -6,10 +6,17 @@ import gamesdomImg from "/public/Gamesdom.png";
 import TrackerImg from "/public/issue-tracker.png";
 import PestRobot from "/public/pestrobot.png";
 import SeleniumBot from "/public/seleniumbot.png";
-import SmartPlug from "/public/smartplug.jpg";
+import GraphMed from "/public/Logo_GraphMed.png";
 import AcquaPura from "/public/acquapura2.png";
 import EcoMeal from "/public/mascotte_ecomeal.svg";
-
+import gephi from "/public/gephi-desktop-logo-inverted.svg";
+import trends from "/public/logo_trends.png";
+import canva from "/public/logo_canva.png";
+import efebia from "/public/efebia_logo.jpg";
+import vicini from "/public/logo_vicini.png";
+import decathlon from "/public/logo_decathlon.png";
+import mediaworld from "/public/logo_mediaworld2.jpg";
+import superprof from "/public/logo_superprof.png";
 export const links = [
 	{
 		name: "Home",
@@ -43,26 +50,20 @@ export const links = [
 
 export const educationData = [
 	{
-		title: "Bachelor's Degree",
-		location: "PESMCOE, Pune",
+		title: "Bachelor's Degree in Computer Science for Digital Communication",
+		location: "University of Milan, Milan, Italy",
 		description:
-			"I'm pursuing my bachelors degree in Electronics & Computer Engineering specialization in Data Science at PESMCOE Pune.",
+			"I completed a bachelor's degree in Computer Science for Digital Communication (L-31) at the University of Milan, graduating with a final grade of 102/110. My thesis focused on developing an application to estimate the environmental impact of meals through image analysis.",
 		icon: React.createElement(LuGraduationCap),
-		date: "2021 - 2025",
+		date: "2020 – 2025",
 	},
 	{
-		title: "HSC",
-		location: "High School, Pune, India",
-		description: "Completed my high school education at Pune University with 95%.",
+		title: "Technical High School Diploma in Computer Science and Telecommunications",
+		location: "IIS Einstein, Vimercate (MB), Italy",
+		description:
+			"I obtained a technical high school diploma in Computer Science and Telecommunications, graduating with a final grade of 90/100.",
 		icon: React.createElement(LuGraduationCap),
-		date: "2019 - 2021",
-	},
-	{
-		title: "SSC",
-		location: "SSGMES, Shegaon",
-		description: "Completed my schooling at SSGM School Shegaon and passed SSC with 90%.",
-		icon: React.createElement(LuGraduationCap),
-		date: "2009-2019",
+		date: "2014 - 2019",
 	},
 ] as const;
 
@@ -82,7 +83,7 @@ export const projectsData = [
 		description:
 			"A cross-platform React Native app to monitor and control a custom-built ESP32 smart plug, featuring real-time data sync with Firebase.",
 		tags: ["React Native", "IoT", "ESP32", "Firebase", "Expo"],
-		imageUrl: SmartPlug,
+		imageUrl: GraphMed,
 		githubLink: "https://github.com/Kapil619/SmartPlug",
 		deploymentLink: "https://github.com/Kapil619/SmartPlug",
 		category: "Mobile",
@@ -136,78 +137,107 @@ export const skillsData = [
 	{ name: "TypeScript", src: "logos:typescript-icon" },
 	{ name: "React", src: "logos:react" },
 	{ name: "Next.js", src: "devicon:nextjs" },
-	{ name: "Flutter", src: "logos:flutter" },
-	{ name: "Selenium", src: "logos:selenium" },
-	{ name: "Django", src: "vscode-icons:file-type-django" },
 	{ name: "MongoDB", src: "logos:mongodb-icon" },
 	{ name: "SQL", src: "vscode-icons:file-type-sql" },
-	{ name: "Firebase", src: "logos:firebase" },
 	{ name: "C++", src: "vscode-icons:file-type-cpp3" },
 	{ name: "Python", src: "logos:python" },
 	{ name: "Java", src: "logos:java" },
-	{ name: "Dart", src: "logos:dart" },
 	{ name: "Node.js", src: "logos:nodejs-icon" },
 	{ name: "Git", src: "devicon:git" },
 	{ name: "Tailwind", src: "devicon:tailwindcss" },
-	{ name: "AWS", src: "skill-icons:aws-dark" },
+	{ name: "SvelteKit", src: "logos:svelte-icon" },
+	{ name: "Figma", src: "logos:figma" },
+	{ name: "Webflow", src: "logos:webflow" },
+	{ name: "Canva", src: canva },
 ] as const;
 
 export const experienceData = [
 	{
-		title: "React Native Engineer",
-		company: "Hipster Inc",
+		title: "Marketing Consultant & Web Developer",
+		company: "AcquaPura",
 		description: [
-			"Develop and deploy high-quality mobile applications for both iOS and Android.",
-			"Build complex, map-based workflows and integrate push notifications.",
-			"Manage the full application lifecycle, from development in Bitbucket to final release on the App Store and Google Play Store.",
+			"Designed and managed the company's website and digital communication.",
+			"Coordinated marketing activities for trade fairs, including promotional material and stand organization.",
+			"Planned and executed digital advertising campaigns to increase brand visibility.",
+			"Improved customer communication workflows and contributed to lead generation strategies.",
 		],
-		imageUrl: "https://mir-s3-cdn-cf.behance.net/user/230/6a0bc2392750827.5ffd3e26d1787.png",
-		skills: ["logos:python", "logos:dart", "logos:firebase", "logos:aws", "logos:selenium"],
-		dateStarted: "July 2025",
+		imageUrl: AcquaPura,
+		skills: ["logos:webflow", "logos:canva", "logos:google-analytics", "logos:figma"],
+		dateStarted: "Jan 2025",
 		dateEnded: "Present",
 	},
+
 	{
-		title: "SDE Intern",
-		company: "SaffronAI",
+		title: "Private Tutor",
+		company: "SuperProf",
 		description: [
-			"Developed and deployed a cross-platform React Native application using TypeScript, successfully launching on both Android and iOS platforms with Firebase and AWS for the backend services",
-			"Leveraged AWS services,including Lambda for serverless workflows, and DynamoDB for user data management",
-			"Designed and deployed push notifications with AWS SNS and SQS, enhancing user engagement.",
-			"Automated infrastructure deployment using AWS CDK streamlining cloud resource management.",
-			"Conducted performance testing, debugged EAS builds, and optimized the app for production usage.",
+			"Taught mathematics, computer science, and English to over 80 students.",
+			"Improved communication, explanation strategies, and personalized learning approaches.",
+			"Managed lesson scheduling, pricing, and self-marketing independently.",
 		],
-		imageUrl: "https://www.saffronai.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo.c61962eb.png&w=96&q=75",
-		skills: ["logos:python", "logos:dart", "logos:firebase", "logos:aws", "logos:selenium"],
-		dateStarted: "Aug 2024",
-		dateEnded: "Apr 2025",
+		imageUrl: superprof,
+		skills: ["logos:python", "logos:javascript", "logos:english", "simple-icons:googleclassroom"],
+		dateStarted: "Sep 2019",
+		dateEnded: "Present",
 	},
+
 	{
-		title: "Development Lead",
-		company: "InfoTik",
+		title: "Frontend Developer & Project Manager",
+		company: "Efebia SRL",
 		description: [
-			" Led the development and deployment of a social media app using React Native and Firebase.",
-			" Implemented key features like Google Authentication, a commenting system, and a full UI revamp.",
-			" Streamlined development processes by configuring Play Console and optimizing the EAS build pipeline.",
-			"Resolved critical bugs, including video playback issues, improving app performance and user satisfaction",
+			"Developed frontend interfaces for multiple web applications, including blockchain-based solutions.",
+			"Led project management activities during development and testing phases.",
+			"Coordinated the team, identified bugs, and improved release processes.",
+			"Worked with Svelte, SvelteKit, TypeScript, HTML/CSS and Tailwind to build modern, responsive UIs.",
 		],
-		imageUrl: "",
-		skills: ["logos:python", "logos:dart", "logos:firebase", "logos:aws", "logos:selenium"],
-		dateStarted: "June 2024",
-		dateEnded: "Aug 2024",
+		imageUrl: efebia,
+		skills: ["logos:svelte-icon", "logos:typescript-icon", "logos:tailwindcss-icon", "logos:figma"],
+		dateStarted: "Nov 2024",
+		dateEnded: "Jun 2025",
 	},
+
 	{
-		title: "Mobile Application Developer Intern",
-		company: "ESHWAY",
+		title: "Sales Specialist",
+		company: "MediaWorld",
 		description: [
-			"As a Mobile Application Developer at ESHWAY, I successfully optimized and deployed Python scripts utilizing Selenium, BeautifulSoup4, Chrome-driver.",
-			"These scripts efficiently scraped data from various websites, storing it in Firebase databases & were successfully deployed on AWS lambda with Docker and ECR.",
-			" On the frontend, I undertook the task of revamping an existing Flutter project, resolving compatibility issues, and upgrading dependencies.",
-			" I implemented critical features, including Google sign-in and mobile number authentication while debugging and enhancing overall application functionality.",
+			"Sold technology products and provided customer assistance across multiple store departments.",
+			"Managed warehouse deliveries and ensured correct product display.",
+			"Achieved exceptional sales performance, becoming top seller for several months.",
+			"Developed stress-management and high-workload organizational skills.",
 		],
-		imageUrl: eshwayImg,
-		skills: ["logos:python", "logos:dart", "logos:firebase", "logos:aws", "logos:selenium"],
-		dateStarted: "December 2023",
-		dateEnded: "January 2024",
+		imageUrl: mediaworld,
+		skills: ["logos:retail", "logos:communication", "logos:customer-support"],
+		dateStarted: "Oct 2023",
+		dateEnded: "May 2024",
+	},
+
+	{
+		title: "Sports Equipment Sales Assistant",
+		company: "Decathlon Italia",
+		description: [
+			"Sold bicycles and accessories in the cycling department.",
+			"Managed cash register operations and customer orders.",
+			"Handled product restocking, bike assembly, and department organization.",
+			"Strengthened manual skills and customer relationship management.",
+		],
+		imageUrl: decathlon,
+		skills: ["logos:retail", "logos:customer-support"],
+		dateStarted: "Mar 2022",
+		dateEnded: "May 2022",
+	},
+
+	{
+		title: "IT Specialist & Graphic Designer",
+		company: "Vicini SRL",
+		description: [
+			"Assisted IT Operations by managing servers, troubleshooting systems, and resolving technical issues.",
+			"Designed and photographed product catalog material for the company.",
+			"Improved problem-solving skills and team collaboration based on iterative feedback.",
+		],
+		imageUrl: vicini,
+		skills: ["logos:python", "logos:canva", "logos:adobe-photoshop"],
+		dateStarted: "Jun 2018",
+		dateEnded: "Aug 2018",
 	},
 ];
 
@@ -222,7 +252,7 @@ export const featuredWorkData = [
 		logoUrl: AcquaPura,
 
 		description:
-			"A complete rebranding and website redesign for AcquaPura, a company specializing in water purification systems. I crafted the visual identity from the ground up and developed a modern, high-converting website using Webflow. The project focuses on clean design, strong product communication, and a trustworthy visual experience.",
+			"A complete branding and website development for AcquaPura, a company specializing in water purification systems. I crafted the visual identity from the ground up and developed a modern, high-converting website using Webflow. The project focuses on clean design, strong product communication, and a trustworthy visual experience.",
 
 		features: [
 			"Full brand identity design (logo, color palette, typography).",
@@ -269,22 +299,25 @@ export const featuredWorkData = [
 	},
 	{
 		title: "GraphMed",
-		tagline: "Social Media Application",
-		logoUrl: "",
+		tagline: "Medical Graph Analysis Application",
+		logoUrl: GraphMed,
 		description:
-			"A mobile app for a UK based startup, InfoTik, that allows users to share videos and photos, comment on posts, and interact with community.",
+			"GraphMed is a research-driven application that maps relationships between symptoms and diseases using large-scale graph analysis. Built for a Social Media Mining project, it enables efficient exploration of medical networks and supports preliminary diagnostic workflows.",
 		features: [
-			"Core features like user auth, video live feed, and commenting.",
-			"Recommendation system for personalized content.",
-			"Realtime data sync with Firebase.",
-			"Redux for state management.",
+			"Symptom–disease graph built through medical web scraping.",
+			"Interactive interface to query symptoms and identify matching conditions.",
+			"Unique-symptom triangulation for more precise diagnosis narrowing.",
+			"Google Trends integration to analyze search behavior and self-diagnosis risks.",
 		],
 		tech: [
-			{ name: "React Native", icon: "logos:react" },
+			{ name: "React", icon: "logos:react" },
 			{ name: "Javascript", icon: "simple-icons:javascript" },
-			{ name: "Firebase", icon: "simple-icons:firebase" },
-			{ name: "Expo", icon: "logos:expo-icon" },
-			{ name: "Redux", icon: "logos:redux" },
+			{ name: "Python", icon: "logos:python" },
+			{ name: "BeautifulSoup", icon: "material-symbols:data-object" },
+			{ name: "NetworkX", icon: "mdi:graph" },
+			{ name: "Gephi", icon: gephi }, // usa il tuo path locale
+			{ name: "Google Trends", icon: trends },
+			{ name: "Canva", icon: canva },
 		],
 		appStoreUrl: null,
 		playStoreUrl: null,

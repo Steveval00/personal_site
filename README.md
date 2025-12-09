@@ -1,4 +1,4 @@
-# 💼 Stefano Valenti — Developer Portfolio
+# My Portfolio
 
 This is my personal developer portfolio, built to showcase my projects, skills, and experience as a front-end developer focused on creating clean, fast, and intuitive digital experiences.
 

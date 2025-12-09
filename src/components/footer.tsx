@@ -15,10 +15,10 @@ const Footer = () => {
 					&copy; {new Date().getFullYear()} Stefano Valenti. All Rights reserved.
 				</small>
 				<div className=" flex flex-row justify-center gap-2 ">
-					<Link target="_blank" href={"https://github.com/Kapil619"}>
+					<Link target="_blank" href={"https://github.com/Steveval00"}>
 						<Icon className="cursor-pointer hover:text-blue-500" width={25} height={25} icon={"ri:github-line"} />
 					</Link>
-					<Link target="_blank" href={" https://www.linkedin.com/in/kapil-badokar/"}>
+					<Link target="_blank" href={"https://www.linkedin.com/in/stefano-valenti-440ab2233/"}>
 						<Icon
 							className="cursor-pointer hover:text-blue-500"
 							width={25}
@@ -26,11 +26,8 @@ const Footer = () => {
 							icon={"mingcute:linkedin-line"}
 						/>
 					</Link>
-					<Link target="_blank" href={"https://www.instagram.com/_kapil619/"}>
+					<Link target="_blank" href={"https://www.instagram.com/stefano_valenti__/"}>
 						<Icon className="cursor-pointer hover:text-blue-500" width={25} height={25} icon={"fa-brands:instagram"} />
-					</Link>
-					<Link target="_blank" href={"https://twitter.com/kapil_badokar"}>
-						<Icon className="cursor-pointer hover:text-blue-500" width={25} height={25} icon={"ri:twitter-line"} />
 					</Link>
 				</div>
 				<button

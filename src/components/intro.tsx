@@ -66,7 +66,7 @@ const Intro = () => {
 	const { ref } = useSectionInView("Home", 0.5);
 	const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
-	const roles = ["Frontend Developer", "Web Designer", "Marketing Enthusiast"];
+	const roles = ["Frontend & Web Developer", "Marketing & Sales Enthusiast", "Private Teacher"];
 
 	return (
 		<motion.section

@@ -66,6 +66,12 @@ const WorkCard = ({ work }: WorkCardProps) => {
 				label: "Check the presentation",
 			},
 		],
+		GraphMed: [
+			{
+				href: "https://www.canva.com/design/DAGRFBvTFk8/_dxyBwuBB-7cXXRW4oiK1w/edit?utm_content=DAGRFBvTFk8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+				label: "Check the presentation",
+			},
+		],
 	};
 
 	const linksToShow = workLinks[work.title];
@@ -195,7 +201,11 @@ const WorkCard = ({ work }: WorkCardProps) => {
                       backdrop-blur-sm shadow-md
                     "
 									>
-										<Icon icon={tag.icon} className="h-5 w-5 text-gray-800 dark:text-gray-100" />
+										{typeof tag.icon === "string" ? (
+											<Icon icon={tag.icon} className="h-5 w-5 text-gray-800 dark:text-gray-100" />
+										) : (
+											<Image src={tag.icon} alt={tag.name} className="h-5 w-5 object-contain" width={20} height={20} />
+										)}
 									</div>
 									<span className="text-xs font-medium text-center leading-tight text-gray-300 dark:text-gray-200">
 										{tag.name}
