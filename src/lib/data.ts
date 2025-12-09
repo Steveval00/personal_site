@@ -16,7 +16,8 @@ import efebia from "/public/efebia_logo.jpg";
 import vicini from "/public/logo_vicini.png";
 import decathlon from "/public/logo_decathlon.png";
 import mediaworld from "/public/logo_mediaworld2.jpg";
-import superprof from "/public/logo_superprof.png";
+import superprof from "/public/Logo_superprof.png";
+
 export const links = [
 	{
 		name: "Home",
