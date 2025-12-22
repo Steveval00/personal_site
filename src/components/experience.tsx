@@ -20,7 +20,7 @@ const Experience = () => {
 		>
 			<SectionHeading text="My Experience" />
 
-			<div className="mt-12 relative max-w-5xl mx-auto px-2 sm:px-4">
+			<div className="mt-12 relative max-w-5xl mx-auto  sm:px-4">
 				{/* Timeline gradient – SOLO DESKTOP */}
 				<div
 					className="

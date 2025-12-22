@@ -82,10 +82,10 @@ const WorkCard = ({ work }: WorkCardProps) => {
         max-w-4xl mx-auto 
         rounded-3xl 
         p-6 sm:p-8 
-        bg-white/5 dark:bg-white/5 
+        bg-gray-100/80 dark:bg-white/5
         backdrop-blur-md 
         shadow-xl 
-        border border-white/10
+        border border-black/5 dark:border-white/10
       "
 			variants={fadeInAnimationVariants}
 			initial="initial"
@@ -100,9 +100,9 @@ const WorkCard = ({ work }: WorkCardProps) => {
 						className="
               mb-4 flex items-center justify-center 
               h-24 w-24 rounded-2xl 
-              bg-white/5 dark:bg-white/5 
+              bg-white/70 dark:bg-white/5
               backdrop-blur-xl 
-              border border-white/20 dark:border-white/10
+              border border-black/10 dark:border-white/10
             "
 					>
 						<Image
@@ -114,13 +114,15 @@ const WorkCard = ({ work }: WorkCardProps) => {
 						/>
 					</div>
 
-					<h3 className="text-2xl sm:text-3xl font-bold mb-1 tracking-tight">{work.title}</h3>
+					<h3 className="text-2xl sm:text-3xl font-bold mb-1 tracking-tight text-gray-900 dark:text-white">
+						{work.title}
+					</h3>
 
-					<p className="text-base text-gray-500 dark:text-white/70 mb-2">{work.tagline}</p>
+					<p className="text-base text-gray-600 dark:text-white/70 mb-2">{work.tagline}</p>
 
 					{/* Elegant Links */}
 					{linksToShow && (
-						<div className="flex flex-wrap gap-3 mt-2  justify-center sm:justify-start">
+						<div className="flex flex-wrap gap-3 mt-2 justify-center sm:justify-start">
 							{linksToShow.map((link, i) => (
 								<a
 									key={i}
@@ -129,11 +131,13 @@ const WorkCard = ({ work }: WorkCardProps) => {
 									rel="noreferrer"
 									className="
                     inline-flex items-center gap-1.5
-                    text-gray-200 hover:text-white
+                    text-gray-700 hover:text-gray-900
+                    dark:text-gray-200 dark:hover:text-white
                     text-sm font-medium
                     px-3 py-1.5 rounded-full
-                    bg-white/5 border border-white/10
-                    hover:bg-white/10
+                    bg-white/70 border border-black/10
+                    hover:bg-white
+                    dark:bg-white/5 dark:border-white/10 dark:hover:bg-white/10
                     transition
                   "
 								>
@@ -147,13 +151,25 @@ const WorkCard = ({ work }: WorkCardProps) => {
 					{/* App Store / Play Store */}
 					<div className="flex gap-3 mt-3">
 						{work.appStoreUrl && (
-							<a href={work.appStoreUrl} target="_blank" rel="noreferrer" className="hover:scale-110 transition">
+							<a
+								href={work.appStoreUrl}
+								target="_blank"
+								rel="noreferrer"
+								className="hover:scale-110 transition"
+								aria-label="Open on App Store"
+							>
 								<Icon icon="logos:apple-app-store" className="h-7 w-7 opacity-90" />
 							</a>
 						)}
 
 						{work.playStoreUrl && (
-							<a href={work.playStoreUrl} target="_blank" rel="noreferrer" className="hover:scale-110 transition">
+							<a
+								href={work.playStoreUrl}
+								target="_blank"
+								rel="noreferrer"
+								className="hover:scale-110 transition"
+								aria-label="Open on Google Play"
+							>
 								<Icon icon="logos:google-play-icon" className="h-7 w-7 opacity-90" />
 							</a>
 						)}
@@ -197,7 +213,7 @@ const WorkCard = ({ work }: WorkCardProps) => {
 									<div
 										className="
                       flex h-11 w-11 items-center justify-center 
-                      rounded-full bg-white/10 dark:bg-white/10 
+                      rounded-full bg-black/5 dark:bg-white/10
                       backdrop-blur-sm shadow-md
                     "
 									>
@@ -207,7 +223,7 @@ const WorkCard = ({ work }: WorkCardProps) => {
 											<Image src={tag.icon} alt={tag.name} className="h-5 w-5 object-contain" width={20} height={20} />
 										)}
 									</div>
-									<span className="text-xs font-medium text-center leading-tight text-gray-300 dark:text-gray-200">
+									<span className="text-xs font-medium text-center leading-tight text-gray-700 dark:text-gray-200">
 										{tag.name}
 									</span>
 								</div>

@@ -43,7 +43,7 @@ const About = () => {
 			<div className="max-w-3xl mx-auto text-center leading-relaxed">
 				<SectionHeading text="About me" />
 
-				<p className="text-lg sm:text-xl mb-10 -mt-4 text-gray-100">
+				<p className="text-lg sm:text-xl mb-10 -mt-4 text-gray-800 dark:text-gray-100">
 					I blend <span className="font-bold text-amber-600 dark:text-amber-400">design, code, and marketing</span> to
 					create digital experiences that truly connect with people.
 				</p>
@@ -56,7 +56,7 @@ const About = () => {
 							className="
                 p-6 sm:p-7
                 rounded-3xl
-                bg-white/5 dark:bg-white/5
+                bg-gray-100/80 dark:bg-white/5
                 backdrop-blur-md
                 border border-white/10
                 shadow-lg
@@ -77,13 +77,13 @@ const About = () => {
 				{/* --- ABOUT TEXT --- */}
 				<div
 					className="
-    max-w-3xl mx-auto
-    space-y-4
-    text-center
-    text-base sm:text-lg
-    leading-relaxed
-    text-gray-100
-  "
+            max-w-3xl mx-auto
+            space-y-4
+            text-center
+            text-base sm:text-lg
+            leading-relaxed
+            text-gray-700 dark:text-gray-100
+          "
 				>
 					<p>
 						I'm a 25-year-old digital communication graduate and front-end developer who loves building clean,
@@ -91,7 +91,7 @@ const About = () => {
 					</p>
 
 					<p>
-						I work with <span className="font-semibold">Svelte, TypeScript, Tailwind, and modern web technologies</span>
+						I work with <span className="font-semibold">Svelte, TypeScript, Tailwind, and modern web technologies</span>{" "}
 						to craft fast, accessible interfaces. With a background in marketing, I focus on clarity, usability, and
 						creating products that feel genuinely intuitive and valuable.
 					</p>

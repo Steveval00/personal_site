@@ -51,7 +51,7 @@ export default function Education() {
 							>
 								{/* Header titolo + data */}
 								<div className="flex flex-col gap-2 mb-3">
-									<h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+									<h3 className="text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 										{item.title}
 									</h3>
 

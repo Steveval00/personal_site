@@ -35,7 +35,7 @@ const ExperienceCard = ({ experience, index }: ExperienceCardProps) => {
 		>
 			<div
 				className="
-          max-w-4xl mx-auto
+          max-w-4xl mx-auto w-full
           rounded-3xl 
           p-6 sm:p-8 
           bg-white/70 dark:bg-white/5 
